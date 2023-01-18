@@ -16,7 +16,7 @@ const checkSupport = async () => {
 
   browser.value ="loading";
   await new Promise((resolve) => setTimeout(resolve, 1000));
-  const isBrowser = await isBrowserSupported();
+  const isBrowser = isBrowserSupported();
   if(isBrowser) {
     browser.value = "supported";
   } else {
