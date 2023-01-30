@@ -1,42 +1,47 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import { isPlatformSupported,isBrowserSupported } from '@passwordlessdev/passwordless-client';
+import { isPlatformSupported, isBrowserSupported, isAutofillSupported} from '@passwordlessdev/passwordless-client';
 
 
 const browser = ref("Checking browser support...");
-const platform = ref("Checking platform supported...")
+const platform = ref("Checking platform support...")
+const autofill = ref("Checking autofill support...")
 const browserInfo = ref(window.navigator.userAgent);
 onMounted( async () => {
   await checkSupport();
 });
+
+const tostring = (bool: boolean) => {
+  if(bool) {
+    return "supported";
+  }
+  return "not-supported";
+};
+
+const wait = () => {
+  return new Promise((resolve) => setTimeout(resolve, 1000));
+}
 
 const checkSupport = async () => {
 
   platform.value = "";
 
   browser.value ="loading";
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await wait();
   const isBrowser = isBrowserSupported();
-  if(isBrowser) {
-    browser.value = "supported";
-  } else {
-    browser.value = "not-supported";
-  }
+  browser.value = tostring(isBrowser);
 
   platform.value ="loading";
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await wait();
 
   const isPlatform = await isPlatformSupported();
-  if(isPlatform) {
-    platform.value = "supported";
-  } else {
-    platform.value = "not-supported";
+  platform.value = tostring(isPlatform);
+
+  autofill.value ="loading";
+  await wait();
+  const isAutofill = await isAutofillSupported();
+  autofill.value = tostring(isAutofill);
   }
-
-  browserInfo.value
-}
-
-
 </script>
 
 <template>
@@ -61,6 +66,14 @@ const checkSupport = async () => {
     <div v-if="platform == 'not-supported'">
     ⚠️ Your browser does not support Platform authentication<br />
     (e.g. FaceId, TouchId, Windows Hello)
+    </div>
+
+    <div v-if="autofill == 'loading'">Loading...</div>
+    <div v-if="autofill == 'supported'">
+      ✅ Your browser supports autofill authentication
+    </div>
+    <div v-if="autofill == 'not-supported'">
+    ⚠️ Your browser does not support autofill authentication
     </div>
 
     <p>{{ browserInfo }}</p>

@@ -117,10 +117,10 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.16.17.tgz#c5a1a4bfe1b57f0c3e61b29883525c6da3e5c091"
   integrity sha512-y+EHuSchhL7FjHgvQL/0fnnFmO4T1bhvWANX6gcnqTjtnKWbTvUMCpGnv2+t+31d7RzyEAYAd4u2fnIhHL6N/Q==
 
-"@passwordlessdev/passwordless-client@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@passwordlessdev/passwordless-client/-/passwordless-client-0.3.1.tgz#19d5b77b080881298ef13e06461ae01e4af39baf"
-  integrity sha512-pM3WlQ63GWhYCVvEuqg3Xx2TjMwSxTOlBMyrPQuo0sOl/zy/K+aJn0zTrjffMw7RGoqelpjhyxBUI/27BLmBYg==
+"@passwordlessdev/passwordless-client@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@passwordlessdev/passwordless-client/-/passwordless-client-0.4.0.tgz#914c7fbfee1a3a125b4bb23065260909a18ccded"
+  integrity sha512-1/mWNt8z8bWXwJlrE8RcvPQFNxskpV3AuFEa1Xv1YDheIX3+wLgRt2rAQ+kO/NYyeey0K0MO6cR0tCeWXQ4FDA==
 
 "@vitejs/plugin-vue@^4.0.0":
   version "4.0.0"
