@@ -148,10 +148,10 @@
   resolved "https://registry.yarnpkg.com/@passwordlessdev/passwordless-client/-/passwordless-client-0.4.0.tgz#914c7fbfee1a3a125b4bb23065260909a18ccded"
   integrity sha512-1/mWNt8z8bWXwJlrE8RcvPQFNxskpV3AuFEa1Xv1YDheIX3+wLgRt2rAQ+kO/NYyeey0K0MO6cR0tCeWXQ4FDA==
 
-"@vitejs/plugin-vue@4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-4.6.2.tgz#057d2ded94c4e71b94e9814f92dcd9306317aa46"
-  integrity sha512-kqf7SGFoG+80aZG6Pf+gsZIVvGSCKE98JbiWqcCV9cThtg91Jav0yvYFC9Zb+jKetNGF6ZKeoaxgZfND21fWKw==
+"@vitejs/plugin-vue@5.1.4":
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-5.1.4.tgz#72b8b705cfce36b00b59af196195146e356500c4"
+  integrity sha512-N2XSI2n3sQqp5w7Y/AN/L2XDjBIRGqXko+eDp42sydYSBeJuSm5a1sLf8zakmo8u7tA8NmBgoDLA1HeOESjp9A==
 
 "@volar/language-core@1.11.1", "@volar/language-core@~1.11.1":
   version "1.11.1"
