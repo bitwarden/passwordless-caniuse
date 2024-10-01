@@ -148,10 +148,10 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz#3188bcb273a414b0d215fd22a58540b989b9409a"
   integrity sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==
 
-"@passwordlessdev/passwordless-client@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@passwordlessdev/passwordless-client/-/passwordless-client-1.1.2.tgz#9cfc7e0d8152210b02fc7c55cea99b1817adbf3e"
-  integrity sha512-Ji4CC+igHsz/UF410v7MGXsax65yOZQOdvDfDg3hNKSNMux1DtKvD1dphfgDmau5mgI1qEVcZutSI/uDDCzJAg==
+"@passwordlessdev/passwordless-client@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@passwordlessdev/passwordless-client/-/passwordless-client-1.2.1.tgz#cd8564e5b3519586c22c219309318f8266bdae5e"
+  integrity sha512-vjEvN6NAEOWPyMHOEGWcDsNYJnW+wFvKMufDITGf38pMsjIOkVKvn2KxdJ+QLC30LwvYmmb+F/+A/mWBRuw2Kw==
 
 "@rollup/rollup-android-arm-eabi@4.22.5":
   version "4.22.5"
